@@ -1,0 +1,718 @@
+# justind.github.io
+Online CV
+<!Doctype html>
+
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Justin Dolman Online CV</title>
+<style>
+
+html {scroll-behavior: smooth;}
+
+h1 {font-size: 5em; font-family: Cambria; color: rgb(250,200,00); text-align: center; margin-bottom: 0.4em;}
+h2 {font-size: 3em; font-family: Cambria; color: rgb(250,200,00); margin: 40px;}
+h3 {font-size: 2em; font-family: Cambria; color: rgb(250,240,00); margin-bottom: 0.4em;}
+h6 {font-size: 0px;}
+p {padding-left: 4em; padding-right: 4em; font-size: 1.5em; color: rgb(240,240,240); margin: 0px;}
+body {Background-color: rgb(70,70,70);font-family: sans-serif}
+
+#career-summary-body {text-align: center}
+#indent {padding-left: 4em;}
+
+.contact-details {text-align: center}
+.title1 {color: black;}
+.indent1 {padding-left: 4em;}
+.image1 {display: block; margin-left: auto; margin-right: auto; height: 23em;}
+
+a {color: rgb(250,250,150); <! fixed menu bar - text colour -->} 
+
+.navbar { <! fixed menu bar -->
+Overflow: hidden;
+background-color: rgb(100,100,100,0.5);
+background-opacity: 0.5;
+position: fixed;
+top: 0;
+margin-left: 0%;
+width: 97%;
+height: 2em;
+font-size: 1.5em;
+text-align: right;
+padding-right: 20px;
+padding-top: 10px;
+}
+
+div {
+  word-wrap: break-word;
+} 
+
+.collapsible {
+  background-color: #777; //button colour before hover/expand
+  cursor: pointer;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  border: none;
+  text-align: centre;
+  outline: none;
+  font-size: 15px;
+  margin-top: 4px;
+  transition: transform .2s;}
+@media only screen and (max-width: 533px) {.collapsible {  width: 99%;}}
+@media only screen and (min-width: 533px) {.collapsible {  width: 49.4%;}}
+@media only screen and (min-width: 782px) {.collapsible {  width: 32.8%;}}
+@media only screen and (min-width: 1032px) {.collapsible {  width: 24.6%;}}
+@media only screen and (min-width: 1275px) {.collapsible {  width: 19.7%;}}
+@media only screen and (min-width: 1543px) {.collapsible {  width: 16.4%;}}
+@media only screen and (min-width: 1781px) {.collapsible {  width: 14%;}}
+
+
+.collapsible2 {
+  object-fit: contain;
+  object-fit: cover;
+  background-color: rgb(0,0,0,0); 
+  padding:10px; 
+  padding-top: 0px; 
+  padding-bottom: 0px; 
+  height:150px; 
+  width: 250px;
+  background-color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin: 0px;
+  transition: transform .2s;}
+@media only screen and (max-width: 637px) {.collapsible2 {  width: 99%;}}
+@media only screen and (min-width: 637px) {.collapsible2 {  width: 49.4%;}}
+@media only screen and (min-width: 950px) {.collapsible2 {  width: 32.8%;}}
+@media only screen and (min-width: 1256px) {.collapsible2 {  width: 24.6%;}}
+@media only screen and (min-width: 1550px) {.collapsible2 {  width: 19.7%;}}
+@media only screen and (min-width: 1850px) {.collapsible2 {  width: 16.4%;}}
+@media only screen and (min-width: 2150px) {.collapsible2 {  width: 14%;}}
+
+.seemore {
+  background-color: #777;
+  cursor: pointer;
+  padding: 18px;
+  width: 19%;
+  border: none;
+  text-align: centre;
+  outline: none;
+  font-size: 15px;
+  margin-top: 4px;
+}
+
+.active, .collapsible2:hover {
+  background-color: white; 
+  -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5);
+  transform: scale(0.9); 
+  font-color: "white";
+}
+
+.active, .collapsible:hover {
+  background-color: white; 
+  -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5);
+  transform: scale(0.95); 
+  font-color: "white";
+}
+
+.active, .seemore:hover {
+  background-color: #666; 
+  -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5);
+  transform: scale(0.95); 
+  font-color: "white";
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: rgb(150,150,150);
+  margin-bottom: 10px;
+}
+
+.educationparallax {
+  background-image: url("education.png");
+  min-height: 600px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.volunteerparallax {
+  background-image: url("volunteer.png");
+  min-height: 600px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.officeparallax {
+  background-image: url("office.png");
+  min-height: 600px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<h6 id="title"></h6><br><br>
+
+<div class="navbar"> 
+<a href="#title"> Top of Page</a>
+<a href="#education">Education</a>
+<a href="#extra-curricular">Extra-Curricular Activities</a>
+<a href="#employment-history">Employment History </a>
+</div>
+
+<h1>Justin <span class="title1">Dolman </span> </h1><br>
+
+<img src="animoji.png" class=image1>
+
+<p id="contact-details" span class="contact-details"><br><br><br>
+<b>Mobile :</b> 0456 922 809 <br><br><br>
+<strong>Email :</strong> justindolman1995@outlook.com <br><br><br>
+<b>LinkedIn :</b> 
+<a target="_blank" href="https://www.linkedin.com/in/justin-dolman-jd1995">www.linkedin.com/in/justin-dolman-jd1995</a> 
+
+<br><br><br><br>
+
+Alongside my studies I have also been employed through various organisations in the public and private sector which compliments the expertise and knowledge I have gained through university. <br><br>
+I have created this website as a means to portray my ability in front-end website creation, which has motivated me to further develop skills in this area. 
+To truly develop my skills in web development, I've made this website completely from scratch - using a Microsoft Notepad document, saved as a HTML file UTF-8.
+</p><br><br><br><br>
+
+<div class="educationparallax"></div>
+
+<h6 id="education"></h6><br><br><br><br>
+
+<span class="rightalign"> <h2> Education</h2>
+
+<br><p>
+<b> Bachelor of Business and Commerce <br> 
+ Management & Leadership </b> <br><br>
+<span class="indent1"> University of Southern Queensland <br>
+<span class="indent1"> Graduation: November 2018 </p>
+<p> <br><br>
+<b> Diploma of Business - Administration </b> <br><br>
+<span class="indent1"> University of Southern Queensland <br>
+<span class="indent1"> Graduation: June 2016 </p>
+<p> <br><br>
+<b> Diploma of Engineering - Mechanical </b> <br><br>
+<span class="indent1"> University of Southern Queensland <br>
+<span class="indent1"> Graduation: November 2014
+</p><br><br><br><br><br>
+</div>
+
+<div class="volunteerparallax"></div>
+
+<h6 id="extra-curricular"></h6><br><br><br><br>
+<h2> Extra Curricular Activities</h2>
+
+<p> <br>
+<i> Cancer Council - Relay for Life Knox </i> <br>
+<span class="indent1"> Committee Member <br><br>
+<i> Ashburton Community Centre </i> <br>
+<span class="indent1"> Committee Member <br><br>
+<i> Red Cross Emergency Services </i> <br>
+<span class="indent1"> Warehouse Logistics Officer <br><br>
+<i> Oakwood School Caulfield Park Community Campus </i> <br>
+<span class="indent1"> Mentor <br><br>
+<i> University of Southern Queensland </i> <br>
+<span class="indent1"> Industry Mentor <br><br>
+<i> Code Club Australia </i> <br>
+<span class="indent1"> Code Club Volunteer <br><br><br><br><br>
+</p>
+
+<div class="officeparallax"></div>
+
+<h6 id="employment-history"></h6><br><br><br><br>
+<h2>Employment History</h2>
+
+<p> it would be cool if I could make a button here for 'expand all'</p><br>
+<div class="zoom"></div>
+
+<button type="button" class="collapsible"> Telstra </button>
+<div class="content">
+  <h3> Telstra </h3>
+  <p><i>Graduate - Telstra Foundations</i> <br>
+<span class="indent1"> Jan 2019 - June 2019 <br>
+<span class="indent1"> Melbourne, Victoria <br><br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> Here's some more content about the role</p>
+	</div>
+	<br><br>
+
+<p><i>Graduate - Global Project Management Office</i> <br>
+<span class="indent1"> Current <br>
+<span class="indent1"> Melbourne, Victoria <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> Through this role I have worked predominantly towards Data Management, Analytics and Reporting, however I have also worked cross-functionally towards projects in areas of Finance, Governance, and Methodology. I have delivered solutions towards a number of complex business problems. I have optimised an online database, identified the root cause of discrepancies in profit margins, and produced reports for various managers within the Enterprises department. Alongside this, I have taken on opportunities to develop process guides, facilitate various meetings, represent Telstra at external events, and produce communications regarding the organisation’s Early Careers Strategy which has been delivered throughout the organisation and to various external stakeholders. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible"> Aspire Professional Development </button>
+<div class="content">
+  <h3> Aspire Professional Development </h3>
+  <p> <i> Project Officer </i> <br>
+<span class="indent1"> Mar 2017 – June 2017 <br>
+<span class="indent1"> Brisbane, Queensland <br>
+<i>Project Officer</i> <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> Through this role I was able to support a number of clients including a department of the Queensland Government. As Project Officer, I worked towards a state-wide government project I was actively engaged towards implementing and executing a new initiative. I worked in a transparent manner with internal and external stakeholders of the organisation as I was responsible for facilitating a mentoring and networking program, developing website content as well as tools and guides to support the initiative. Working in this role has allowed me to support Aboriginal and Torres Strait Islander people from a wide range of backgrounds, cultures and communities throughout Queensland. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible"> Indigenous Business Australia </button>
+<div class="content">
+  <h3> Indigenous Business Australia </h3>
+  <p><i> Summer Intern </i> <br>
+<span class="indent1"> Nov 2016 - Feb 2017 <br>
+<span class="indent1"> Brisbane, Queensland <br><br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> I had recently completed my first internship with IBA during June and July of 2016. During my second internship with IBA, I researched and approached a number of indigenous-owned businesses within the mining services industry. I was then given a project to introduce these business owners to the services and support offered within IBA. I was required to regularly engage with this portfolio of clients to gain an understanding of each business which would allow me to manage and deliver a variety of business support services which were specifically tailored towards the needs of each business owner. Through this role I also supported facilitation of several workshops to provide support business owners through start-up and growth stages of business. </p>
+	</div>
+	<br><br>
+
+<p><i> Winter Intern </i> <br>
+<span class="indent1"> June 2016 - July 2017 <br>
+<span class="indent1"> Brisbane, Queensland <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> During my first internship with IBA I designed, created and implemented a user-friendly database which provides staff with the ability to search for supporting organisations based on the desired needs of an IBA client. Working on this project required me to liaise with staff members of IBA, meet with IBA clients and review applications of IBA clients, research organisations which provide support in specific areas needed by IBA, and to develop computer literacy skills which would enable me to develop a user-friendly database. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible"> University of Southern Queensland </button>
+<div class="content">
+  <h3> University of Southern Queensland </h3>
+  <p> <i> Intern - Office of the Deputy Vice Chancellor </i> <br>
+<span class="indent1"> Aug 2016 – Nov 2016 <br>
+<span class="indent1"> Toowoomba, Queensland <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> During this role I was working in the Office of the Deputy Vice Chancellor (DVC) and Chief Information Officer (CIO). In this role I assist in the development of engagement and communications strategies within the Academic Services Division and provided assistance towards the co-ordination and execution of events within the division. This involved preparing, maintaining and reviewing content of key communicational tools to promote ASD activities to align with the brand of the organisation, events and communications policies. I would regularly report to the Deputy Vice Chancellor & Chief Information Officer, as well as the Senior Executive Officer to discuss upcoming activities and events. I regularly liaised with internal and external stakeholders in a professional manner which fostered on-going dialog and commitment. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible"> Barry Hyland Earthmoving </button>
+<div class="content">
+  <h3> Barry Hyland Earthmoving </h3>
+  <p> <i>Accounting Assistant</i> <br>
+<span class="indent1"> May 2016 – Nov 2016 <br>
+<span class="indent1"> Kingsthorpe, Queensland <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> During my employment with Bruce Hyland Engineering I have been rewarded with opportunities to work independently which has helped me to gain an in-depth understanding of the operations of this organisation. The duties of my position include reviewing timesheets; entering data into QuickBooks; creating payslips for salary and pro rata employees; sending invoices; reconciling accounts; and recording amounts payable and receivable. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible"> Qantas - Q Catering </button>
+<div class="content">
+  <h3> Qantas - Q Catering </h3>
+  <p> <i>Intern</i> <br>
+<span class="indent1"> Nov 2015 – Feb 2016 <br>
+<span class="indent1"> Brisbane, Queensland <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> I was employed by Qantas at the Brisbane Q Catering centre to update the Standard Operating Procedures according to the requirements of the new facility. During my employment I built personal relations with a large number of employees in order to gain a detailed understanding of the function of each job role within my department. During this process I observed, discussed and provided findings on the core responsibilities of each employee. After completing the Standard Operating Procedures, I worked with managers of the organisation to finalise each of the documents. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible"> 3D Data Guidance </button>
+<div class="content">
+  <h3> 3D Data Guidance </h3>
+  <p> <i>Casual Position</i> <br>
+<span class="indent1"> Sep 2015 – Nov 2015 <br>
+<span class="indent1"> Toowoomba, Queensland <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> I was employed by 3D Data Guidance to assist with managing their internal accounts. During my employment I worked independently to update the accounts payable and receivable to an electronic version where they can be organised in a timely manner. I continued this project by assisting in the preparation of tax invoices. I was also introduced to some engineering software, and I was required to undertake research for marketing purposes. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible"> CareerTrackers </button>
+<div class="content">
+  <h3> CareerTrackers </h3>
+  <p> <i>Student Ambassador</i> <br>
+<span class="indent1"> Feb 2015 – June 2015 <br>
+<span class="indent1"> Toowoomba, Queensland <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> As the first student to join CareerTrackers from the University of Southern Queensland, I was enthusiastic to apply for the position of Student Ambassador to promote the program to fellow indigenous students. This position required me to regularly meet with students in order to help match them to a company that is aligned to their career interests. During this process I would engage with students on campus to understand their career goals while I provided support to ensure that each student achieved optimal results in the classroom. After recruiting students I assisted in pre-employment training which included program orientation, CV compilation, and confidence building. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible"> John Holland - Sydney Metro </button>
+<div class="content">
+  <h3> John Holland - Sydney Metro </h3>
+  <p> <i>Undergraduate Engineer</i> <br>
+<span class="indent1"> Nov 2014 - Mar 2015 <br>
+<span class="indent1"> Macquarie Park, Sydney, New South Wales <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> Having experience with a similar project, I was engaged to this project to assist with data management and system engineering. I was required to undertake various delegated tasks which required competent knowledge of the company’s data management software, which I had grasped early in my employment. I was working side-by-side with the Principal Systems Engineer who motivated me to pursue challenging tasks with strict deadlines. As well as this, I was also encouraged to delegate tasks and information with managers and other staff throughout various departments of the organisation. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible"> CPB Contractors - AirportLink M7 </button>
+<div class="content">
+  <h3> CPB Contractors - Airport Link M7</h3>
+  <p> <i>Undergraduate Engineer</i> <br>
+<span class="indent1"> Nov 2013 – Mar 2014 <br>
+<span class="indent1"> Kedron, Brisbane, Queensland <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> I was employed by CPB Contractors (formerly known as Leighton Contractors) to engage with the Airport Link M7 project. During my employment I reviewed and updated engineering drawings, which involved learning the relevant computer software. I updated and implemented a roster of 13 staff members which required me to develop a new flow pattern. After this I performed a stock-take and audit of the business inventory on hand. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible"> Salmon Earthmoving </button>
+<div class="content">
+  <h3> Salmon Earthmoving</h3>
+  <p> <i>Work Experience</i> <br>
+<span class="indent1"> Dec 2011 – Jan 2012 <br>
+<span class="indent1"> Collinsville Mine, Queensland <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> During my school holidays I gained experience working for a coal mine to gain an understanding of the operations within a mine site. Within this role I provided assistance to the Site Manager while adhering to the strict OH&S standards set by the organisation. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible"> Supa IGA </button>
+<div class="content">
+  <h3> Supa IGA </h3>
+  <p> <i> Cashier </i> <br>
+<span class="indent1"> Sep 2010 - Dec 2010 <br>
+<span class="indent1"> Chinchilla, Queensland <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> While studying at school, I worked as a cashier for the local Supa IGA. Duties in this role involved handling cash and EFTPOS transactions, maintaining positive customer interactions as well as general duties which included trolley runs and a cash count at the end of each shift. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible"> Origin Energy </button>
+<div class="content">
+  <h3> Origin Energy </h3>
+  <p> <i>Work Experience</i> <br>
+<span class="indent1"> September 2010 <br>
+<span class="indent1"> Chinchilla, Queensland <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> During my school holidays, I undertook a Work Experience placement to gain a further understanding of the operations within the mining industry. Through this placement, I provided assistance to the Site Manager while adhering to the strict OH&S standards set by the organisation. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+<div class="officeparallax"></div>
+
+<h6 id="employment-history"></h6><br><br><br><br>
+<h2>Employment History</h2>
+
+<br>
+<div class="zoom"></div>
+
+<button type="button" class="collapsible2"> <img src="telstra.png" style="height:150px;" class=image1> </button>
+<div class="content">
+  <h3> Telstra </h3>
+  <p><i>Graduate - Telstra Foundations</i> <br>
+<span class="indent1"> Jan 2019 - June 2019 <br>
+<span class="indent1"> Melbourne, Victoria <br><br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> Here's some more content about the role</p>
+	</div>
+	<br><br>
+
+<p><i>Graduate - Global Project Management Office</i> <br>
+<span class="indent1"> Current <br>
+<span class="indent1"> Melbourne, Victoria <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> Through this role I have worked predominantly towards Data Management, Analytics and Reporting, however I have also worked cross-functionally towards projects in areas of Finance, Governance, and Methodology. I have delivered solutions towards a number of complex business problems. I have optimised an online database, identified the root cause of discrepancies in profit margins, and produced reports for various managers within the Enterprises department. Alongside this, I have taken on opportunities to develop process guides, facilitate various meetings, represent Telstra at external events, and produce communications regarding the organisation’s Early Careers Strategy which has been delivered throughout the organisation and to various external stakeholders. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible2"> <img src="aspire.png" style="height:150px;" class=image1> </button>
+<div class="content">
+  <h3> Aspire Professional Development </h3>
+  <p> <i> Project Officer </i> <br>
+<span class="indent1"> Mar 2017 – June 2017 <br>
+<span class="indent1"> Brisbane, Queensland <br>
+<i>Project Officer</i> <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> Through this role I was able to support a number of clients including a department of the Queensland Government. As Project Officer, I worked towards a state-wide government project I was actively engaged towards implementing and executing a new initiative. I worked in a transparent manner with internal and external stakeholders of the organisation as I was responsible for facilitating a mentoring and networking program, developing website content as well as tools and guides to support the initiative. Working in this role has allowed me to support Aboriginal and Torres Strait Islander people from a wide range of backgrounds, cultures and communities throughout Queensland. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible2"> <img src="iba.png" style="height:150px;" class=image1> </button>
+<div class="content">
+  <h3> Indigenous Business Australia </h3>
+  <p><i> Summer Intern </i> <br>
+<span class="indent1"> Nov 2016 - Feb 2017 <br>
+<span class="indent1"> Brisbane, Queensland <br><br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> I had recently completed my first internship with IBA during June and July of 2016. During my second internship with IBA, I researched and approached a number of indigenous-owned businesses within the mining services industry. I was then given a project to introduce these business owners to the services and support offered within IBA. I was required to regularly engage with this portfolio of clients to gain an understanding of each business which would allow me to manage and deliver a variety of business support services which were specifically tailored towards the needs of each business owner. Through this role I also supported facilitation of several workshops to provide support business owners through start-up and growth stages of business. </p>
+	</div>
+	<br><br>
+<p><i> Winter Intern </i> <br>
+<span class="indent1"> June 2016 - July 2017 <br>
+<span class="indent1"> Brisbane, Queensland <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> During my first internship with IBA I designed, created and implemented a user-friendly database which provides staff with the ability to search for supporting organisations based on the desired needs of an IBA client. Working on this project required me to liaise with staff members of IBA, meet with IBA clients and review applications of IBA clients, research organisations which provide support in specific areas needed by IBA, and to develop computer literacy skills which would enable me to develop a user-friendly database. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible2"> <img src="usq.png" style="height:150px;" class=image1> </button>
+<div class="content">
+  <h3> University of Southern Queensland </h3>
+  <p> <i> Intern - Office of the Deputy Vice Chancellor </i> <br>
+<span class="indent1"> Aug 2016 – Nov 2016 <br>
+<span class="indent1"> Toowoomba, Queensland <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> During this role I was working in the Office of the Deputy Vice Chancellor (DVC) and Chief Information Officer (CIO). In this role I assist in the development of engagement and communications strategies within the Academic Services Division and provided assistance towards the co-ordination and execution of events within the division. This involved preparing, maintaining and reviewing content of key communicational tools to promote ASD activities to align with the brand of the organisation, events and communications policies. I would regularly report to the Deputy Vice Chancellor & Chief Information Officer, as well as the Senior Executive Officer to discuss upcoming activities and events. I regularly liaised with internal and external stakeholders in a professional manner which fostered on-going dialog and commitment. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible2"> <img src="barry-hyland.png" style="height:150px;" class=image1> </button>
+<div class="content">
+  <h3> Barry Hyland Earthmoving </h3>
+  <p> <i>Accounting Assistant</i> <br>
+<span class="indent1"> May 2016 – Nov 2016 <br>
+<span class="indent1"> Kingsthorpe, Queensland <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> During my employment with Bruce Hyland Engineering I have been rewarded with opportunities to work independently which has helped me to gain an in-depth understanding of the operations of this organisation. The duties of my position include reviewing timesheets; entering data into QuickBooks; creating payslips for salary and pro rata employees; sending invoices; reconciling accounts; and recording amounts payable and receivable. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible2"> <img src="qantas.png"  style="height:150px;" class=image1> </button>
+<div class="content">
+  <h3> Qantas - Q Catering </h3>
+  <p> <i>Intern</i> <br>
+<span class="indent1"> Nov 2015 – Feb 2016 <br>
+<span class="indent1"> Brisbane, Queensland <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> I was employed by Qantas at the Brisbane Q Catering centre to update the Standard Operating Procedures according to the requirements of the new facility. During my employment I built personal relations with a large number of employees in order to gain a detailed understanding of the function of each job role within my department. During this process I observed, discussed and provided findings on the core responsibilities of each employee. After completing the Standard Operating Procedures, I worked with managers of the organisation to finalise each of the documents. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible2"> <img src="3d-data.png"  style="height:150px;" class=image1> </button>
+<div class="content">
+  <h3> 3D Data Guidance </h3>
+  <p> <i>Casual Position</i> <br>
+<span class="indent1"> Sep 2015 – Nov 2015 <br>
+<span class="indent1"> Toowoomba, Queensland <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> I was employed by 3D Data Guidance to assist with managing their internal accounts. During my employment I worked independently to update the accounts payable and receivable to an electronic version where they can be organised in a timely manner. I continued this project by assisting in the preparation of tax invoices. I was also introduced to some engineering software, and I was required to undertake research for marketing purposes. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible2"> <img src="careertrackers.png" style="height:150px;" class=image1> </button>
+<div class="content">
+  <h3> CareerTrackers </h3>
+  <p> <i>Student Ambassador</i> <br>
+<span class="indent1"> Feb 2015 – June 2015 <br>
+<span class="indent1"> Toowoomba, Queensland <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> As the first student to join CareerTrackers from the University of Southern Queensland, I was enthusiastic to apply for the position of Student Ambassador to promote the program to fellow indigenous students. This position required me to regularly meet with students in order to help match them to a company that is aligned to their career interests. During this process I would engage with students on campus to understand their career goals while I provided support to ensure that each student achieved optimal results in the classroom. After recruiting students I assisted in pre-employment training which included program orientation, CV compilation, and confidence building. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible2"> <img src="john-holland.png" style="height:150px;" class=image1> </button>
+<div class="content">
+  <h3> John Holland - Sydney Metro </h3>
+  <p> <i>Undergraduate Engineer</i> <br>
+<span class="indent1"> Nov 2014 - Mar 2015 <br>
+<span class="indent1"> Macquarie Park, Sydney, New South Wales <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> Having experience with a similar project, I was engaged to this project to assist with data management and system engineering. I was required to undertake various delegated tasks which required competent knowledge of the company’s data management software, which I had grasped early in my employment. I was working side-by-side with the Principal Systems Engineer who motivated me to pursue challenging tasks with strict deadlines. As well as this, I was also encouraged to delegate tasks and information with managers and other staff throughout various departments of the organisation. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible2"> <img src="cpb-contractors.png" style="height:150px;" class=image1> </button>
+<div class="content">
+  <h3> CPB Contractors - Airport Link M7</h3>
+  <p> <i>Undergraduate Engineer</i> <br>
+<span class="indent1"> Nov 2013 – Mar 2014 <br>
+<span class="indent1"> Kedron, Brisbane, Queensland <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> I was employed by CPB Contractors (formerly known as Leighton Contractors) to engage with the Airport Link M7 project. During my employment I reviewed and updated engineering drawings, which involved learning the relevant computer software. I updated and implemented a roster of 13 staff members which required me to develop a new flow pattern. After this I performed a stock-take and audit of the business inventory on hand. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible2"> <img src="salmon-earthmoving.png" style="height:150px;" class=image1> </button>
+<div class="content">
+  <h3> Salmon Earthmoving</h3>
+  <p> <i>Work Experience</i> <br>
+<span class="indent1"> Dec 2011 – Jan 2012 <br>
+<span class="indent1"> Collinsville Mine, Queensland <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> During my school holidays I gained experience working for a coal mine to gain an understanding of the operations within a mine site. Within this role I provided assistance to the Site Manager while adhering to the strict OH&S standards set by the organisation. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible2"> <img src="supa-iga.png" style="height:150px;" class=image1> </button>
+<div class="content">
+  <h3> Supa IGA </h3>
+  <p> <i> Cashier </i> <br>
+<span class="indent1"> Sep 2010 - Dec 2010 <br>
+<span class="indent1"> Chinchilla, Queensland <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> While studying at school, I worked as a cashier for the local Supa IGA. Duties in this role involved handling cash and EFTPOS transactions, maintaining positive customer interactions as well as general duties which included trolley runs and a cash count at the end of each shift. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<button type="button" class="collapsible2"> <img src="origin.png" style="height:150px;" class=image1> </button>
+<div class="content">
+  <h3> Origin Energy </h3>
+  <p> <i>Work Experience</i> <br>
+<span class="indent1"> September 2010 <br>
+<span class="indent1"> Chinchilla, Queensland <br>
+<br></p>
+	<button type="button" class="seemore"> See More </button>
+	<div class="content">
+	<p><br> During my school holidays, I undertook a Work Experience placement to gain a further understanding of the operations within the mining industry. Through this placement, I provided assistance to the Site Manager while adhering to the strict OH&S standards set by the organisation. </p>
+	</div>
+	<p><br></p>
+</div>
+
+<br><br><br><br><br><br><br><br><br>
+
+<script>
+var coll = document.getElementsByClassName("collapsible2");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script>
+var coll = document.getElementsByClassName("seemore");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+
+</html>
